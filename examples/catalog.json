@@ -1,0 +1,6 @@
+{
+  "creatures": ["Bear"],
+  "items": ["ConcreteFoundation", "ConcreteMix", "SteelIngot", "Stone", "Wood", "WorkshopRepairKit"],
+  "maps": ["Olympus"],
+  "recipes": ["ConcreteFoundation", "WoodFloor", "WoodWall"]
+}
