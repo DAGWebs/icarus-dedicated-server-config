@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "community-overhaul",
+  "progression": {
+    "levelCap": 100,
+    "xpMultiplier": 1.5,
+    "pointsPerLevel": {"talent": 2, "soloTalent": 1, "blueprint": 4},
+    "pointCaps": {"talent": 150, "soloTalent": 100, "blueprint": 500},
+    "statsPerLevel": {"health": 2.0, "stamina": 1.5, "meleeDamagePercent": 0.25, "rangedDamagePercent": 0.25}
+  },
+  "items": {
+    "defaultStackMultiplier": 2.0,
+    "stacks": {"Wood": 500, "Stone": 250, "ConcreteMix": 100}
+  },
+  "crafting": {
+    "defaultOutputMultiplier": 1,
+    "recipes": {
+      "WoodFloor": {"craftsPerAction": 1, "outputPerCraft": 4},
+      "WoodWall": {"craftsPerAction": 1, "outputPerCraft": 4},
+      "ConcreteFoundation": {"craftsPerAction": 1, "outputPerCraft": 2, "ingredients": {"ConcreteMix": 12}}
+    }
+  },
+  "missions": [{
+    "id": "custom_supply_run",
+    "name": "Supply Run",
+    "map": "Olympus",
+    "goals": [
+      {"type": "craft", "item": "ConcreteFoundation", "amount": 20},
+      {"type": "kill", "creature": "Bear", "amount": 5},
+      {"type": "deliver", "item": "SteelIngot", "amount": 50}
+    ],
+    "rewards": {"xp": 25000, "credits": 500, "exotics": 100, "talentPoints": 2, "blueprintPoints": 5, "items": [{"item": "WorkshopRepairKit", "amount": 1}]}
+  }]
+}
